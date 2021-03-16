@@ -496,45 +496,81 @@
 
 // // Also in JS, if statement does not need {}.
 
-// 17-- Switch 
-const color = 'red'
+// // 17-- Switch: use when there are a lot of situations so that if else are too many
+// const color = 'red'
 
-switch(color){
-  case 'red':
-    console.log('color is red');
-    break;
-  case 'blue':
-    console.log('color is blue');
-    break;
-  default:
-    console.log('color is not red or blue')
-    break;
-}
+// switch(color){
+//   case 'red':
+//     console.log('color is red');
+//     break;
+//   case 'blue':
+//     console.log('color is blue');
+//     break;
+//   default:
+//     console.log('color is not red or blue')
+//     break;
+// }
 
-let day;
-switch (new Date().getDay()){
-  case 0:
-    day = 'Sunday';
-    break;
-  case 1:
-    day = 'Monday';
-    break;
-  case 2:
-    day = 'Tuesday';
-    break;
-  case 3:
-    day = 'Wednesday';
-    break;
-  case 4:
-    day = 'Thursday';
-    break;
-  case 5:
-    day = 'Friday';
-    break;
-  case 6:
-    day = 'Saturday';
-    break;
+// let day;
+// switch (new Date().getDay()){
+//   case 0:
+//     day = 'Sunday';
+//     break;
+//   case 1:
+//     day = 'Monday';
+//     break;
+//   case 2:
+//     day = 'Tuesday';
+//     break;
+//   case 3:
+//     day = 'Wednesday';
+//     break;
+//   case 4:
+//     day = 'Thursday';
+//     break;
+//   case 5:
+//     day = 'Friday';
+//     break;
+//   case 6:
+//     day = 'Saturday';
+//     break;
     
+// }
+
+// console.log(`Today is ${day}`)
+
+// 18 Functions
+function greet(firstName ='default_first', lastName= 'default_last'){
+  return 'Hello '+ firstName + ' ' + lastName
 }
 
-console.log(`Today is ${day}`)
+console.log(greet()) //return default value
+console.log(greet('john','doe'))
+
+//Function expression
+const square = function(x=3){
+  return x*x
+}
+console.log(square()) //return default value
+console.log(square(8)) //return 64, overwrite default value.
+
+// IMMEDIATELY INVOKABLE FUNCTION EXPRESSIONS -IIFEs: immediately exectured, variable cannot be accessed from outside of it
+(function (my_name){
+  console.log('Hi ' + my_name);
+})('Brad');
+
+// PROPERTY METHODS
+const todo = {
+  add: function(){
+    console.log('add todo');
+  },
+  edit: function(id){
+    console.log (`Edit todo ${id}`)
+  }
+}
+todo.delete = function (){
+  console.log ('Delete todo...');
+}
+todo.add()
+todo.edit(22)
+todo.delete()
