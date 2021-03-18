@@ -576,71 +576,71 @@
 // todo.delete()
 
 
-// // 19 Loops
-// // initial value; condition; increment by 1 until condition is no longer true
-// for (let i = 0; i < 10; i++){
+// // // 19 Loops
+// // // initial value; condition; increment by 1 until condition is no longer true
+// // for (let i = 0; i < 10; i++){
   
-//   if (i===2){
-//     console.log('2 is my fav number')
-//     continue; // means keep going with the loop, so only i ===2 is shown
-//   }
-//   if (i ===5){
-//     console.log('stop the loop')
-//     break
-//   }
-//     console.log(`Number ${i}`) //return 0 to 9, since i <10
+// //   if (i===2){
+// //     console.log('2 is my fav number')
+// //     continue; // means keep going with the loop, so only i ===2 is shown
+// //   }
+// //   if (i ===5){
+// //     console.log('stop the loop')
+// //     break
+// //   }
+// //     console.log(`Number ${i}`) //return 0 to 9, since i <10
 
+// // }
+// // /// WHILE LOOP
+// // let i = 0; // initate outside the lpp[]
+
+// // while(i<10){
+// //   console.log('number '+ i);
+// //   i ++; // increment in the loop
+// // } //only condition in here
+
+// // /// DO WHILE LOOP
+// // let i = 1000;
+
+// // do { // do is always gonna run once, no matter the condition. here it will return 1000, even i >10, it will run once.
+// //   console.log('number ' + i);
+// //   i++;
+// // }
+
+// // while(i <10);
+
+// /// LOOP THROUGH ARRAY
+// const cars=['ford','honda','toyota','lexus']
+// // for (let i = 0; i < cars.length; i++){
+// //     console.log(cars[i]); //return the car one by one
+// // }
+
+// // /// FOR EACH to LOOP THROUGH ARRAY: EASIER, RECOMMENDED
+// // /// iterator: car
+// // cars.forEach(function(car){
+// //   console.log(car)
+// // })
+
+// // // MAP
+// // // return a different array
+// // const users = [
+// //   {id:1, name1:'john'},
+// //   {id:2, name1:'sara'},
+// //   {id:3, name1:'karen'}
+// // ];
+// // const ids = users.map(function(user){
+// //   return user.id;
+// // })
+// // console.log(ids)
+
+// // FOR IN LOOP
+// const user={
+//  firstName :'jone',
+//  lastName:'doe',
+//  age:40
 // }
-// /// WHILE LOOP
-// let i = 0; // initate outside the lpp[]
 
-// while(i<10){
-//   console.log('number '+ i);
-//   i ++; // increment in the loop
-// } //only condition in here
-
-// /// DO WHILE LOOP
-// let i = 1000;
-
-// do { // do is always gonna run once, no matter the condition. here it will return 1000, even i >10, it will run once.
-//   console.log('number ' + i);
-//   i++;
+// for(let x in user){
+//   //console.log(x) //gives the key
+//   console.log(`${x} : ${user[x]}`) //gives key and name pair
 // }
-
-// while(i <10);
-
-/// LOOP THROUGH ARRAY
-const cars=['ford','honda','toyota','lexus']
-// for (let i = 0; i < cars.length; i++){
-//     console.log(cars[i]); //return the car one by one
-// }
-
-// /// FOR EACH to LOOP THROUGH ARRAY: EASIER, RECOMMENDED
-// /// iterator: car
-// cars.forEach(function(car){
-//   console.log(car)
-// })
-
-// // MAP
-// // return a different array
-// const users = [
-//   {id:1, name1:'john'},
-//   {id:2, name1:'sara'},
-//   {id:3, name1:'karen'}
-// ];
-// const ids = users.map(function(user){
-//   return user.id;
-// })
-// console.log(ids)
-
-// FOR IN LOOP
-const user={
- firstName :'jone',
- lastName:'doe',
- age:40
-}
-
-for(let x in user){
-  //console.log(x) //gives the key
-  console.log(`${x} : ${user[x]}`) //gives key and name pair
-}
