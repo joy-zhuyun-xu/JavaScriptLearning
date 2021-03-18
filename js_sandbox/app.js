@@ -644,3 +644,59 @@
 //   //console.log(x) //gives the key
 //   console.log(`${x} : ${user[x]}`) //gives key and name pair
 // }
+
+// 20 WINDOW PROJECT
+// window methods
+// console.log (123)
+
+// // Alert
+// alert('hello world')
+
+// Prompt
+// const input  = prompt();
+
+// alert(input) // this alert back at us what ever we put in prompt
+
+// // confirm
+// if (confirm('are you sure')){
+//   console.log('YES') 
+// }else{
+//   console.log('NO')
+// }
+
+
+// Properties of the window
+let val;
+//outer height and width
+val = window.outerHeight;
+val = window.outerWidth;
+
+// inner height, width, within the scroll bars
+val = window.innerHeight;
+val = window.innerWidth;
+
+// scroll points gives where the scroll bar is
+val = window.scrollY
+
+//Location object: gives host, hose name, origin, path name, port, etc...
+val = window.location
+val = window.location.hostname // can print one of them
+val = window.location.href
+val = window.location.search
+
+// //redirect to some website or internal
+// window.location.href='http://google.com'
+
+// // reload: would use it in some function, not in global since it will keep reloading
+// window.location.reload();
+
+// History object: can get the browsing history
+//val= window.history.go(-2); // go back to the second last opened page
+//val= window.history.length; // show how many history sites have visited in total.
+
+//Navigator Object
+val = window.navigator;
+val = window.navigator.appName;
+val = window.navigator.language;
+
+console.log(val);
