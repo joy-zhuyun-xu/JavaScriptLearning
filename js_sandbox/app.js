@@ -645,58 +645,89 @@
 //   console.log(`${x} : ${user[x]}`) //gives key and name pair
 // }
 
-// 20 WINDOW PROJECT
-// window methods
-// console.log (123)
+// // 20 WINDOW PROJECT
+// // window methods
+// // console.log (123)
 
-// // Alert
-// alert('hello world')
+// // // Alert
+// // alert('hello world')
 
-// Prompt
-// const input  = prompt();
+// // Prompt
+// // const input  = prompt();
 
-// alert(input) // this alert back at us what ever we put in prompt
+// // alert(input) // this alert back at us what ever we put in prompt
 
-// // confirm
-// if (confirm('are you sure')){
-//   console.log('YES') 
-// }else{
-//   console.log('NO')
+// // // confirm
+// // if (confirm('are you sure')){
+// //   console.log('YES') 
+// // }else{
+// //   console.log('NO')
+// // }
+
+
+// // Properties of the window
+// let val;
+// //outer height and width
+// val = window.outerHeight;
+// val = window.outerWidth;
+
+// // inner height, width, within the scroll bars
+// val = window.innerHeight;
+// val = window.innerWidth;
+
+// // scroll points gives where the scroll bar is
+// val = window.scrollY
+
+// //Location object: gives host, hose name, origin, path name, port, etc...
+// val = window.location
+// val = window.location.hostname // can print one of them
+// val = window.location.href
+// val = window.location.search
+
+// // //redirect to some website or internal
+// // window.location.href='http://google.com'
+
+// // // reload: would use it in some function, not in global since it will keep reloading
+// // window.location.reload();
+
+// // History object: can get the browsing history
+// //val= window.history.go(-2); // go back to the second last opened page
+// //val= window.history.length; // show how many history sites have visited in total.
+
+// //Navigator Object
+// val = window.navigator;
+// val = window.navigator.appName;
+// val = window.navigator.language;
+
+// console.log(val);
+
+// 21 Block Scope with let & const
+// Global scope
+var a=1
+let b=2
+const c=3
+
+// // Function scope
+// function test(){
+//   var a=4;
+//   let b=5;
+//   const c=6;
+//   console.log('Function Scope: ', a, b,c)
 // }
 
+// test();
 
-// Properties of the window
-let val;
-//outer height and width
-val = window.outerHeight;
-val = window.outerWidth;
 
-// inner height, width, within the scroll bars
-val = window.innerHeight;
-val = window.innerWidth;
+// Block scope
+// if(true){
+//   // Block scope
+//   var a =4;
+//   let b=5;
+//   const c=6;
+//   console.log('If Scope ', a, b,c) // notice in the gloabl scope var(a) is changed into 4, not 1. let and const (b and c) are still the same in the global scope
+// }
 
-// scroll points gives where the scroll bar is
-val = window.scrollY
-
-//Location object: gives host, hose name, origin, path name, port, etc...
-val = window.location
-val = window.location.hostname // can print one of them
-val = window.location.href
-val = window.location.search
-
-// //redirect to some website or internal
-// window.location.href='http://google.com'
-
-// // reload: would use it in some function, not in global since it will keep reloading
-// window.location.reload();
-
-// History object: can get the browsing history
-//val= window.history.go(-2); // go back to the second last opened page
-//val= window.history.length; // show how many history sites have visited in total.
-
-//Navigator Object
-val = window.navigator;
-val = window.navigator.appName;
-val = window.navigator.language;
-
-console.log(val);
+for (let a=0; a<10; a ++){
+  console.log(`Loop: ${a}`)
+} // notice that since we are using let, gloabl scope a is still 1. If we use var here, the global scope a will be 10.
+console.log('Global Scope: ', a , b, c)
