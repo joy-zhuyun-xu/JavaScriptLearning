@@ -701,40 +701,40 @@
 
 // console.log(val);
 
-// 21 Block Scope with let & const
-// Global scope
-var a=1
-let b=2
-const c=3
+// // 21 Block Scope with let & const
+// // Global scope
+// var a=1
+// let b=2
+// const c=3
 
-// // Function scope
-// function test(){
-//   var a=4;
-//   let b=5;
-//   const c=6;
-//   console.log('Function Scope: ', a, b,c)
-// }
+// // // Function scope
+// // function test(){
+// //   var a=4;
+// //   let b=5;
+// //   const c=6;
+// //   console.log('Function Scope: ', a, b,c)
+// // }
 
-// test();
+// // test();
 
 
-// Block scope
-// if(true){
-//   // Block scope
-//   var a =4;
-//   let b=5;
-//   const c=6;
-//   console.log('If Scope ', a, b,c) // notice in the gloabl scope var(a) is changed into 4, not 1. let and const (b and c) are still the same in the global scope
-// }
+// // Block scope
+// // if(true){
+// //   // Block scope
+// //   var a =4;
+// //   let b=5;
+// //   const c=6;
+// //   console.log('If Scope ', a, b,c) // notice in the gloabl scope var(a) is changed into 4, not 1. let and const (b and c) are still the same in the global scope
+// // }
 
-for (let a=0; a<10; a ++){
-  console.log(`Loop: ${a}`)
-} // notice that since we are using let, gloabl scope a is still 1. If we use var here, the global scope a will be 10.
-console.log('Global Scope: ', a , b, c)
+// for (let a=0; a<10; a ++){
+//   console.log(`Loop: ${a}`)
+// } // notice that since we are using let, gloabl scope a is still 1. If we use var here, the global scope a will be 10.
+// console.log('Global Scope: ', a , b, c)
 
-//22 DOM
-// Document Object Model
-// Document -> html -> head -> elements
-//                  -> body-> elements
+// //22 DOM
+// // Document Object Model
+// // Document -> html -> head -> elements
+// //                  -> body-> elements
 
-// can use Jquery
+// // can use Jquery
